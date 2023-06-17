@@ -1,5 +1,0 @@
-LIBRARY api-ms-win-core-io-l1-1-0
-
-EXPORTS
-
-DeviceIoControl
