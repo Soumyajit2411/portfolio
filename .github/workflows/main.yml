@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: GitHub Pages
 
 on:
   push:
@@ -8,22 +8,31 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
+    
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-
-      - name: Build
-        run: npm ci && npm run build  # Replace with your build commands
-
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.0
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: ./build  # Replace with your build output directory
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+      
+    - name: Build and Deploy
+      run: |
+        npm install  # Replace with your build commands
+        npm run deploy  # Replace with your build commands
+        
+        # Set up the git configuration
+        git config --global user.name "${{ github.actor }}"
+        git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+        
+        # Push the build files to the gh-pages branch
+        git checkout --orphan gh-pages
+        git --work-tree ./dist add --all
+        git --work-tree ./dist commit -m "Deploy to GitHub Pages"
+        git push origin HEAD:gh-pages --force
+        
+        # Clean up the build files and the temporary branch
+        git checkout main  # Replace with your branch name
+        git branch -D gh-pages
