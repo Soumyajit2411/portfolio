@@ -24,8 +24,8 @@ jobs:
         npm run deploy  # Replace with your build commands
         
         # Set up the git configuration
-        git config --global user.name "${{ github.actor }}"
-        git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+        git config --global user.name "soumyajit2411"
+        git config --global user.email "soumyajiroy2411@gmail.com"
         
         # Push the build files to the gh-pages branch
         git checkout --orphan gh-pages
