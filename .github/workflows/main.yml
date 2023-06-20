@@ -1,30 +1,31 @@
-name: Github-pages
+name: GitHub Pages Deploy
 
 on:
   push:
     branches:
-      - develop
+      - develop  # Change this to the branch you want to deploy
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@master
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
         with:
-          persist-credentials: false
-          submodules: true  # TODO remove this if not using submodules in Hexo
+          node-version: '14'  # Change this to the Node.js version you require
 
-      - name: Install 🔧
-        run: yarn install
+      - name: Install dependencies
+        run: npm install
 
-      - name: Build 🏗️
-        run: |
-          yarn clean
-          yarn build
-      - name: Deploy to GH Pages 🚀
+      - name: Build
+        run: npm run build  # Change this to your build command
+
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: public
+          personal_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build  # Change this to your build output directory
