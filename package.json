@@ -1,5 +1,4 @@
 {
-  "homepage": "https://soumyajit2411.github.io/portfolio/",
   "name": "soumyajit-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -13,6 +12,8 @@
     "react-icons": "^4.9.0",
     "react-router-dom": "^6.13.0",
     "react-scripts": "^5.0.1",
+    "nth-check": "^2.1.1",
+    "css-select": "5.1.0",
     "react-transition-group": "^4.4.5",
     "typewriter-effect": "^2.20.1",
     "web-vitals": "^3.3.2"
