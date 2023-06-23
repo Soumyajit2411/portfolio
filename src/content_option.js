@@ -93,11 +93,9 @@ const contactConfig = {
   YOUR_FONE: "+91-8697507758",
   description:
     "DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL",
-  // creat an emailjs.com account
-  // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
-  YOUR_SERVICE_ID: "service_id",
-  YOUR_TEMPLATE_ID: "template_id",
-  YOUR_USER_ID: "user_id",
+  YOUR_SERVICE_ID: "service_6q3ofpd",
+  YOUR_TEMPLATE_ID: "template_68wst6d",
+  YOUR_USER_ID: "O5_XAz376Uo0b8w58",
 };
 
 const socialprofils = {
