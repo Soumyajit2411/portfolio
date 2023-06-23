@@ -3,14 +3,11 @@ name: React Workflow
 on:
   push:
     branches:
-      - master
-      - develop
       - portfolio
   pull_request:
     branches:
       - master
       - develop
-      - portfolio
 
 jobs:
   build:
