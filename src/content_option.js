@@ -1,4 +1,3 @@
-require('dotenv').config();
 const logotext = "SOUMYAJIT ROY";
 const meta = {
   title: "Soumyajit Roy",
@@ -94,9 +93,9 @@ const contactConfig = {
   YOUR_FONE: "+91-8697507758",
   description:
     "DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL",
-  YOUR_SERVICE_ID: process.env.YOUR_SERVICE_ID,
-  YOUR_TEMPLATE_ID: process.env.YOUR_TEMPLATE_ID,
-  YOUR_USER_ID: process.env.YOUR_USER_ID,
+  YOUR_SERVICE_ID: "service_6q3ofpd",
+  YOUR_TEMPLATE_ID: "template_68wst6d",
+  YOUR_USER_ID: "O5_XAz376Uo0b8w58",
 };
 
 const socialprofils = {
