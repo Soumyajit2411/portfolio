@@ -19,7 +19,6 @@ jobs:
       - name: Build and run Docker container
         run: |
           docker build -t your-container .
-          docker run your-container
 
   check:
     needs: build
