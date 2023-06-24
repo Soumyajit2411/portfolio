@@ -1,0 +1,37 @@
+name: Build
+on:
+  push:
+    branches:
+      - portfolio
+  pull_request:
+    branches:
+      - master
+      - develop
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Build and run Docker container
+        run: |
+          docker build -t your-container .
+          docker run your-container
+
+  check:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check container status
+        run: |
+          container_status=$(docker ps -a --filter "name=your-container" --format "{{.Status}}")
+          if [[ "$container_status" == *"Exited (0)"* ]]; then
+            echo "Container ran successfully."
+          else
+            echo "Container failed to run."
+            exit 1
+          fi
