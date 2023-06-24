@@ -1,9 +1,12 @@
-name: GitHub Pages Deploy
+name: GitHub Pages
 
 on:
   push:
     branches:
-      - develop  # Change this to the branch you want to deploy
+      - develop
+  pull_request:
+    branches:
+      - develop
 
 jobs:
   deploy:
@@ -16,16 +19,16 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '14'  # Change this to the Node.js version you require
+          node-version: 18
 
       - name: Install dependencies
-        run: npm install
+        run: yarn install --frozen-lockfile
 
-      - name: Build
-        run: npm run build  # Change this to your build command
+      - name: Build site
+        run: yarn build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          personal_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build  # Change this to your build output directory
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build

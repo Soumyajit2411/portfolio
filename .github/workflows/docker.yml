@@ -1,0 +1,30 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - portfolio
+  pull_request:
+    branches:
+      - master
+      - develop
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Build Docker image
+        run: docker build -t my-docker-image .
+
+      - name: Run Docker container
+        run: docker run -d --name my-docker-container my-docker-image
+
+      - name: Check container status
+        run: docker ps -a
+
+      - name: Clean up
+        run: docker stop my-docker-container && docker rm my-docker-container && docker rmi my-docker-image
