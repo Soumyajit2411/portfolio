@@ -3,6 +3,9 @@ name: GitHub Pages
 on:
   push:
     branches:
+      - portfolio
+  pull_request:
+    branches:
       - develop
 
 jobs:
