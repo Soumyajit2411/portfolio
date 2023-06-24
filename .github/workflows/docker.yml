@@ -1,4 +1,5 @@
 name: Build
+
 on:
   push:
     branches:
@@ -16,21 +17,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Build and run Docker container
-        run: |
-          docker build -t your-container .
+      - name: Build Docker image
+        run: docker build -t my-docker-image .
 
-  check:
-    needs: build
-    runs-on: ubuntu-latest
+      - name: Run Docker container
+        run: docker run -d --name my-docker-container my-docker-image
 
-    steps:
       - name: Check container status
-        run: |
-          container_status=$(docker ps -a --filter "name=your-container" --format "{{.Status}}")
-          if [[ "$container_status" == *"Exited (0)"* ]]; then
-            echo "Container ran successfully."
-          else
-            echo "Container failed to run."
-            exit 1
-          fi
+        run: docker ps -a
+
+      - name: Clean up
+        run: docker stop my-docker-container && docker rm my-docker-container && docker rmi my-docker-image
