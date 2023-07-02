@@ -20,6 +20,13 @@ const Headermain = () => {
           <Link className="navbar-brand nav_ac" to="/">
             {logotext}
           </Link>
+          <Link
+            className="navbar-brand"
+            to="https://drive.google.com/file/d/1lP6TRrhAZYqgcmCdW9JJQ0yiIqC-danP/view?usp=sharing"
+            target="blank"
+          >
+            Resume
+          </Link>
           <div className="d-flex align-items-center">
             <Themetoggle />
             <button className="menu__button  nav_ac" onClick={handleToggle}>
@@ -57,6 +64,17 @@ const Headermain = () => {
                     <Link onClick={handleToggle} to="/contact" className="my-3">
                       {" "}
                       Contact
+                    </Link>
+                  </li>
+                  <li className="menu_item">
+                    <Link
+                      onClick={handleToggle}
+                      to="https://drive.google.com/file/d/1lP6TRrhAZYqgcmCdW9JJQ0yiIqC-danP/view?usp=sharing"
+                      className="my-3"
+                      target="blank"
+                    >
+                      {" "}
+                      Resume
                     </Link>
                   </li>
                 </ul>
