@@ -18,7 +18,7 @@
   border: 1px solid var(--secondary-color);
   transition: 0.3s ease;
   font-size: 0;
-  min-height: 300px;
+  /* min-height: 300px; */
 }
 
 .po_item img {
@@ -73,6 +73,7 @@
   padding: 4px 8px;
   text-align: center;
   font-size: 1rem;
+  text-decoration: none;
 }
 
 .po_item .content a:hover {

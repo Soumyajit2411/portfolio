@@ -88,9 +88,9 @@ const services = [
 
 const dataportfolio = [
   {
-    img: "../../assets/images/project1.png",
+    img: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
     description: "AI-Enabled FinTech B2B Invoice Management Application",
-    link: "#",
+    link: "https://drive.google.com/drive/folders/1_bs8Vr7TV9XteXc8oQeL6eoXgKlOPWwP",
   },
 ];
 
