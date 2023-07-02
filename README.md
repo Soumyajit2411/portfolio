@@ -8,29 +8,11 @@ type `npm start` and when u are done coding type `npm run build` to build your a
 
 _NOTE: if you have yarn just replace `npm start` and `npm run build` with `yarn start` and `yarn build`._
 
-<a href="https://www.buymeacoffee.com/vivek9patel" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 40px !important;width: 140px !important;" ></a>
+<a href="https://bmc.link/soumyajitroy" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 40px !important;width: 140px !important;" ></a>
 
-### To make the contact form work
+## This project was made using Create React App! Here is the scripts that u can run.
 
-- Create a account in [emailjs](https://www.emailjs.com/) create also new Outlook or Gmail account to be able
-  to send email.
-- Create a new service, select and log in to your newly created outlook or gmail account on EmailJS.
-- Go back to the dashboard and get the Service ID copy it.
-- Create a .env file in your root folder and put
-
-```
-
-NEXT_PUBLIC_USER_ID = 'YOUR_USER_ID'
-NEXT_PUBLIC_TEMPLATE_ID = 'template_fqqqb9g'
-NEXT_PUBLIC_SERVICE_ID = 'YOUR_SERVICE_ID'
-
-```
-
-into it. Replace \*your user id and your service ID with your values in your EmailJS service.
-
-## This project was made using Create Next App! Here is the scripts that u can run.
-
-### `npm start`
+### `yarn start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -38,7 +20,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm run build`
+### `yarn build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.

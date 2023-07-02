@@ -86,7 +86,13 @@ const services = [
   },
 ];
 
-const dataportfolio = [];
+const dataportfolio = [
+  {
+    img: "../../assets/images/project1.png",
+    description: "AI-Enabled FinTech B2B Invoice Management Application",
+    link: "#",
+  },
+];
 
 const contactConfig = {
   YOUR_EMAIL: "soumyajitroy24111@gmail.com",
