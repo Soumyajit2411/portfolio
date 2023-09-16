@@ -1,5 +1,4 @@
 {
-  "homepage": "https://soumyajit2411.github.io/portfolio/",
   "name": "soumyajit-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -21,6 +20,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "build-dev": "react-scripts build --env-config homepage-dev.json",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
