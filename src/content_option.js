@@ -24,7 +24,7 @@ const dataabout = {
 };
 const worktimeline = [
   {
-    jobtitle: "Software Engineer",
+    jobtitle: "Software Engineer Internship",
     where: "Highradius",
     date: "01-01-2022",
   },
@@ -34,7 +34,7 @@ const worktimeline = [
     date: "01-05-2022",
   },
   {
-    jobtitle: "Software Engineer",
+    jobtitle: "Software Engineer Internship",
     where: "Talview",
     date: "01-01-2023",
   },
@@ -91,6 +91,15 @@ const dataportfolio = [
     img: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
     description: "AI-Enabled FinTech B2B Invoice Management Application",
     link: "https://drive.google.com/drive/folders/1_bs8Vr7TV9XteXc8oQeL6eoXgKlOPWwP",
+  },
+  {
+    img: "https://images.unsplash.com/photo-1675352162037-792ae4045e3c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2832&q=80",
+    description: "Linkedin EasyApply Bot",
+    link: "https://github.com/Soumyajit2411/Linkedin-EasyApply-Bot",
+  },
+  {
+    img: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2944&q=80",
+    description: "Leave Tracker App",
   },
 ];
 
