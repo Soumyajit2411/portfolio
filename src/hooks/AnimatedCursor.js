@@ -146,7 +146,7 @@ function CursorCore({
       previousTimeRef.current = time;
       requestRef.current = requestAnimationFrame(animateOuterCursor);
     },
-    [requestRef] // eslint-disable-line
+    [requestRef], // eslint-disable-line
   );
 
   // RAF for animateOuterCursor
