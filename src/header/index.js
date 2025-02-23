@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./style.css";
 import { VscGrabber, VscClose } from "react-icons/vsc";
 import { Link } from "react-router-dom";
-import { logotext, socialprofils, resume } from "../content_option";
+import { logotext, socialprofils } from "../content_option";
 import Themetoggle from "../components/themetoggle";
 
 const Headermain = () => {
@@ -19,9 +19,6 @@ const Headermain = () => {
         <div className="d-flex align-items-center justify-content-between">
           <Link className="navbar-brand nav_ac" to="/">
             {logotext}
-          </Link>
-          <Link className="navbar-brand" to={resume.link} target="blank">
-            Resume
           </Link>
           <div className="d-flex align-items-center">
             <Themetoggle />
@@ -60,17 +57,6 @@ const Headermain = () => {
                     <Link onClick={handleToggle} to="/contact" className="my-3">
                       {" "}
                       Contact
-                    </Link>
-                  </li>
-                  <li className="menu_item">
-                    <Link
-                      onClick={handleToggle}
-                      to={resume.link}
-                      className="my-3"
-                      target="blank"
-                    >
-                      {" "}
-                      Resume
                     </Link>
                   </li>
                 </ul>
