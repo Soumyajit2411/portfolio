@@ -126,7 +126,7 @@ const socialprofils = {
 };
 
 const resume = {
-  link: "https://drive.google.com/file/d/1lP6TRrhAZYqgcmCdW9JJQ0yiIqC-danP/view?usp=sharing",
+  link: "https://github.com/Soumyajit2411/portfolio/blob/develop/src/assets/pdf/resume.pdf",
 };
 export {
   meta,
