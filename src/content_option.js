@@ -13,25 +13,20 @@ const introdata = {
     third : "I develop web apps",
   },
   description:
-    "Experienced Software Engineer with a demonstrated history of working in the software industry. Skilled in C++, Python, Java, RPA, and C (Programming Language). Strong information technology professional pursuing a Bachelor's degree focused in Computer Science from the Kalinga Institute Of Industrial Technology",
-  your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
+    "Accomplished Software Engineer with expertise in Java and Python, specializing in Node.js, Temporal, and Hasura. Experienced in Robotic Process Automation (RPA) with a strong track record of delivering impactful solutions, optimizing processes, and enhancing efficiency.",
+  your_img_url: "",
 };
 
 const dataabout = {
   title: "Software Engineer",
   aboutme:
-    "Experienced Software Engineer with a demonstrated history of working in the software industry. Skilled in C++, Python, Java, RPA, and C (Programming Language). Strong information technology professional pursuing a Bachelor's degree focused in Computer Science from the Kalinga Institute Of Industrial Technology",
+    "Accomplished Software Engineer with expertise in Java and Python, specializing in Node.js, Temporal, and Hasura. Experienced in Robotic Process Automation (RPA) with a strong track record of delivering impactful solutions, optimizing processes, and enhancing efficiency.",
 };
 const worktimeline = [
   {
     jobtitle: "Software Engineer Internship",
     where   : "Highradius",
-    date    : "01-01-2022",
-  },
-  {
-    jobtitle: "Full Stack Engineer",
-    where   : "Highradius",
-    date    : "01-05-2022",
+    date    : "01-06-2022",
   },
   {
     jobtitle: "Software Engineer Internship",
@@ -41,48 +36,59 @@ const worktimeline = [
   {
     jobtitle: "Backend Engineer",
     where   : "Talview",
-    date    : "01-05-2022",
+    date    : "01-05-2023",
   },
 ];
 
 const skills = [
   {
-    name : "Python",
-    value: 90,
+    name : "Node.js",
+    value: 80,
   },
   {
-    name : "Node.js",
-    value: 85,
+    name : "Java",
+    value: 50,
   },
   {
     name : "Javascript",
-    value: 80,
+    value: 70,
   },
   {
     name : "React",
     value: 60,
   },
   {
-    name : "Java",
-    value: 85,
+    name : "Docker",
+    value: 60,
+  },
+  {
+    name : "GraphQL",
+    value: 70,
+  },
+  {
+    name : "Temporal",
+    value: 30,
+  },
+  {
+    name : "Python",
+    value: 50,
+  },
+  {
+    name : "Robotic Process Automation",
+    value: 50,
   },
 ];
 
 const services = [
   {
-    title: "Websites Designer",
+    title: "Software Development",
     description:
-      "Experienced Software Engineer with a demonstrated history of working in the software industry. Skilled in C++, Python, Java, RPA, and C (Programming Language).",
+      "Skilled in Java, Python, Node.js, Temporal, and Hasura, with expertise in building scalable applications and optimizing workflows for better performance.",
   },
   {
-    title: "Flutter Apps",
+    title: "Robotic Process Automation",
     description:
-      "Experienced Software Engineer with a demonstrated history of working in the software industry. Skilled in C++, Python, Java, RPA, and C (Programming Language).",
-  },
-  {
-    title: "Wordpress Design",
-    description:
-      "Experienced Software Engineer with a demonstrated history of working in the software industry. Skilled in C++, Python, Java, RPA, and C (Programming Language).",
+      "Experienced in Robotic Process Automation (RPA), streamlining workflows, reducing manual effort, and enhancing efficiency through automation solutions.",
   },
 ];
 
@@ -105,7 +111,7 @@ const dataportfolio = [
 
 const contactConfig = {
   YOUR_EMAIL: "soumyajitroy24111@gmail.com",
-  YOUR_FONE : "+91-8697507758",
+  YOUR_FONE : "+91-7439958301",
   description:
     "DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL",
   YOUR_SERVICE_ID : "service_6q3ofpd",
@@ -118,6 +124,10 @@ const socialprofils = {
   linkedin: "https://www.linkedin.com/in/soumyajit-roy-a573101b6/",
   twitter : "https://twitter.com/Soumyaj99647687",
 };
+
+const resume = {
+  link: "https://drive.google.com/file/d/1lP6TRrhAZYqgcmCdW9JJQ0yiIqC-danP/view?usp=sharing",
+};
 export {
   meta,
   dataabout,
@@ -129,4 +139,5 @@ export {
   contactConfig,
   socialprofils,
   logotext,
+  resume,
 };
