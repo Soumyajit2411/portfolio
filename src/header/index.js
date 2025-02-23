@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./style.css";
 import { VscGrabber, VscClose } from "react-icons/vsc";
 import { Link } from "react-router-dom";
-import { logotext, socialprofils } from "../content_option";
+import { logotext, socialprofils, resume } from "../content_option";
 import Themetoggle from "../components/themetoggle";
 
 const Headermain = () => {
@@ -20,11 +20,7 @@ const Headermain = () => {
           <Link className="navbar-brand nav_ac" to="/">
             {logotext}
           </Link>
-          <Link
-            className="navbar-brand"
-            to="https://drive.google.com/file/d/1lP6TRrhAZYqgcmCdW9JJQ0yiIqC-danP/view?usp=sharing"
-            target="blank"
-          >
+          <Link className="navbar-brand" to={resume.link} target="blank">
             Resume
           </Link>
           <div className="d-flex align-items-center">
@@ -69,7 +65,7 @@ const Headermain = () => {
                   <li className="menu_item">
                     <Link
                       onClick={handleToggle}
-                      to="https://drive.google.com/file/d/1lP6TRrhAZYqgcmCdW9JJQ0yiIqC-danP/view?usp=sharing"
+                      to={resume.link}
                       className="my-3"
                       target="blank"
                     >
