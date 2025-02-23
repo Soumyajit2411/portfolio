@@ -125,9 +125,6 @@ const socialprofils = {
   twitter : "https://twitter.com/Soumyaj99647687",
 };
 
-const resume = {
-  link: "https://github.com/Soumyajit2411/portfolio/blob/develop/src/assets/pdf/resume.pdf",
-};
 export {
   meta,
   dataabout,
@@ -139,5 +136,4 @@ export {
   contactConfig,
   socialprofils,
   logotext,
-  resume,
 };
