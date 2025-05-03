@@ -13,20 +13,20 @@ const introdata = {
     third: "I develop web apps",
   },
   description:
-    "Accomplished Software Engineer with expertise in Java and Python, specializing in Node.js, Temporal, and Hasura. Experienced in Robotic Process Automation (RPA) with a strong track record of delivering impactful solutions, optimizing processes, and enhancing efficiency.",
+    "Software Engineer | Expert in Node.js, GraphQL & PostgreSQL | AWS-Driven Architect of Scalable Microservices & Automation-First Solutions | Seamless Third-Party Integrations Specialist.",
   your_img_url: "",
 };
 
 const dataabout = {
   title: "Software Engineer",
   aboutme:
-    "Accomplished Software Engineer with expertise in Java and Python, specializing in Node.js, Temporal, and Hasura. Experienced in Robotic Process Automation (RPA) with a strong track record of delivering impactful solutions, optimizing processes, and enhancing efficiency.",
+    "Software Engineer | Expert in Node.js, GraphQL & PostgreSQL | AWS-Driven Architect of Scalable Microservices & Automation-First Solutions | Seamless Third-Party Integrations Specialist.",
 };
 const worktimeline = [
   {
-    jobtitle: "Software Engineer Internship",
-    where: "Highradius",
-    date: "01-06-2022",
+    jobtitle: "Software Engineer - Backend",
+    where: "Talview",
+    date: "01-05-2023",
   },
   {
     jobtitle: "Software Engineer Internship",
@@ -34,16 +34,36 @@ const worktimeline = [
     date: "01-01-2023",
   },
   {
-    jobtitle: "Backend Engineer",
-    where: "Talview",
-    date: "01-05-2023",
+    jobtitle: "Software Engineer Internship",
+    where: "Highradius",
+    date: "01-06-2022",
   },
 ];
 
 const skills = [
   {
+    name: "AWS",
+    value: 50,
+  },
+  {
     name: "Node.js",
     value: 80,
+  },
+  {
+    name: "Typescript",
+    value: 70,
+  },
+  {
+    name: "GraphQL",
+    value: 50,
+  },
+  {
+    name: "Serverless Framework",
+    value: 50,
+  },
+  {
+    name: "OpenAPI",
+    value: 50,
   },
   {
     name: "Java",
@@ -60,10 +80,6 @@ const skills = [
   {
     name: "Docker",
     value: 60,
-  },
-  {
-    name: "GraphQL",
-    value: 70,
   },
   {
     name: "Temporal",
@@ -94,14 +110,14 @@ const services = [
 
 const dataportfolio = [
   {
-    img: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
-    description: "AI-Enabled FinTech B2B Invoice Management Application",
-    link: "https://drive.google.com/drive/folders/1_bs8Vr7TV9XteXc8oQeL6eoXgKlOPWwP",
-  },
-  {
     img: "https://images.unsplash.com/photo-1675352162037-792ae4045e3c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2832&q=80",
     description: "Linkedin EasyApply Bot",
     link: "https://github.com/Soumyajit2411/Linkedin-EasyApply-Bot",
+  },
+  {
+    img: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+    description: "AI-Enabled FinTech B2B Invoice Management Application",
+    link: "https://drive.google.com/drive/folders/1_bs8Vr7TV9XteXc8oQeL6eoXgKlOPWwP",
   },
   {
     img: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2944&q=80",
@@ -110,7 +126,7 @@ const dataportfolio = [
 ];
 
 const contactConfig = {
-  YOUR_EMAIL: "soumyajitroy24111@gmail.com",
+  YOUR_EMAIL: "soumyajitroy2411@gmail.com",
   YOUR_FONE: "+91-7439958301",
   description:
     "DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL",
